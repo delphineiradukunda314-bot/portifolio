@@ -1,10 +1,9 @@
 *,
 ::before,
-::after{
-    margin: 0;
-    padding: 0;
+::after {
+  margin: 0;
+  padding: 0;
 }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -13,13 +12,14 @@ header {
   position: fixed;
   width: 85%;
   top: 0;
+  z-index:99999;
 }
 
 
 #logo h1 {
 
 
-  font-size: 20px;
+  font-size: 30px;
   background: linear-gradient(to right, black, rgb(226, 175, 5));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -28,103 +28,85 @@ header {
 
 #nav-link {
   display: flex;
-  gap: 20px
+  gap: 20px;
+  margin-right: 20px;
+
 }
-
-
 #nav-link span a {
   color: black;
   text-decoration: none;
 }
-
-
 #active {
   text-decoration: underline;
+
 }
 
-main {
+/*end of  header section */
+main {      
   
   display: flex;
   justify-content: space-between;
   height: 100vh;
-  padding-left: 150px;
+  padding: 0 150px;
+  position: relative ;
 }
 
+h5{
+  color: #fdb703;
+}
 #content {
+margin-top: 150px;
+display: flex;
+flex-direction: column;
+gap: 20px;
 
-
-  margin-top: 200px;
+}
+  #content h1{
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+#content h1 {
+  width: 440px;
+  font-size: 40px;
+
+}
+
 #content p{
   
   width: 450px;
-  font-size: 20px
-
+  font-size: 20px;
 }
-
 #button-left{
-    background-color:#FDB703;
-    color:black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
-    width: 100px;
-#button-left{
-  background-color:yellow;
+  background-color: rgb(216, 167, 8);
   color: black;
-  padding:5px 10px;
+  width: 150px;
+  padding: 5px 10px;
   border-radius: 5px;
   border: none;
   font-weight: bold;
 }
-#button-left{
-  background-color:yellow;
-  color: black;
-  padding:5px 10px;
-  border-radius: 5px;
-  border: none;
-  font-weight: bold;
+#image-container{
+ margin-top: 150px;
+ background-color: #fdb703;
+ width: 250px;
+  height: 250px;
+   border-radius: 50%;
 }
-#button-left{
-  background-color:yellow;
-  color: black;
-  padding:5px 10px;
-  border-radius: 5px;
-  border: none;
-  font-weight: bold;
-}
-
+#image-container img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
 } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#media{
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  display: flex;
+  gap:20px
+}
 
 
 
